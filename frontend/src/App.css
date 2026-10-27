@@ -1,0 +1,849 @@
+body {
+
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+
+  background-color: #eaf5e6;
+
+  color: #1f3d2b;
+
+}
+
+#root {
+
+  min-height: 100vh;
+
+}
+
+#root > div {
+
+  min-height: 100vh;
+
+  text-align: center;
+
+  padding: 0;
+
+}
+
+h1 {
+
+  font-size: 48px;
+
+  margin: 0 0 15px;
+
+  color: #216b36;
+
+}
+
+h2 {
+
+  font-size: 28px;
+
+  margin: 0 0 15px;
+
+}
+
+p {
+
+  max-width: 650px;
+
+  font-size: 18px;
+
+  line-height: 1.6;
+
+  margin-bottom: 25px;
+
+}
+
+input {
+
+  padding: 12px 15px;
+
+  width: 300px;
+
+  font-size: 16px;
+
+  border: 1px solid #9ab89b;
+
+  border-radius: 8px;
+
+  box-sizing: border-box;
+
+}
+
+button {
+
+  padding: 12px 20px;
+
+  margin-left: 8px;
+
+  font-size: 16px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  background-color: #2e7d32;
+
+  color: white;
+
+}
+
+button:hover {
+
+  background-color: #256628;
+
+}
+
+
+/* Navbar */
+
+nav {
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 15px 30px;
+
+  box-sizing: border-box;
+
+  background-color: white;
+
+  border-bottom: 1px solid #d5e5d2;
+
+}
+
+nav h2 {
+
+  margin: 0;
+
+  font-size: 24px;
+
+  color: #216b36;
+
+}
+
+nav div {
+
+  display: flex;
+
+  gap: 25px;
+
+}
+
+nav a {
+
+  text-decoration: none;
+
+  color: #1f3d2b;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+}
+
+nav a:hover {
+
+  color: #2e7d32;
+
+}
+/* Hero Section */
+
+.hero {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 64px;
+  margin: 0 0 15px;
+  color: #216b36;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin: 0 0 20px;
+  color: #1f3d2b;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box input {
+  width: 400px;
+}
+
+.search-box button {
+  margin-left: 0;
+}
+/* Categories */
+
+.categories {
+  padding: 40px 20px 60px;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #1f3d2b;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.category-list button {
+  margin-left: 0;
+  padding: 14px 24px;
+  background-color: white;
+  color: #216b36;
+  border: 1px solid #9ab89b;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.category-list button:hover {
+  background-color: #dff0da;
+}
+/* Featured Products */
+
+.featured-products {
+  padding: 50px 20px 70px;
+  text-align: center;
+}
+
+.featured-products h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #1f3d2b;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.product-card {
+  width: 280px;
+  padding: 25px;
+  background-color: white;
+  border: 1px solid #d5e5d2;
+  border-radius: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.product-image {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #216b36;
+}
+
+.product-card p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.eco-score {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.product-card button {
+  margin-left: 0;
+}
+/* Product Details */
+
+.product-details {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.product-details-card {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: white;
+  border: 1px solid #d5e5d2;
+  border-radius: 18px;
+  box-sizing: border-box;
+}
+
+.product-details-image {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.product-details-card h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.product-description {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.product-information {
+  text-align: left;
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #f4f8f3;
+  border-radius: 12px;
+}
+
+.product-information p {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.eco-score-details {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #eaf5e6;
+  border-radius: 12px;
+}
+
+.eco-score-details h2 {
+  font-size: 24px;
+}
+
+.eco-score-details p {
+  font-size: 28px;
+  margin-bottom: 0;
+  color: #216b36;
+}
+
+.why-better {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.why-better h2 {
+  font-size: 24px;
+  color: #216b36;
+}
+
+.why-better p {
+  font-size: 16px;
+}
+
+
+/* Compare Page */
+
+.compare-page {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.compare-page > h1 {
+  font-size: 42px;
+  color: #216b36;
+  margin-bottom: 15px;
+}
+
+.compare-page > p {
+  max-width: 700px;
+  margin: 0 auto 35px;
+  font-size: 18px;
+}
+
+.compare-selectors {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.compare-selectors > div {
+  background-color: white;
+  padding: 25px;
+  border: 1px solid #d5e5d2;
+  border-radius: 15px;
+  width: 280px;
+  box-sizing: border-box;
+}
+
+.compare-selectors h3 {
+  color: #216b36;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.compare-selectors select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #9ab89b;
+  border-radius: 8px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.comparison-table {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid #d5e5d2;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.comparison-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 1px solid #d5e5d2;
+}
+
+.comparison-row:last-child {
+  border-bottom: none;
+}
+
+.comparison-row > div {
+  padding: 18px;
+  border-right: 1px solid #d5e5d2;
+  font-size: 16px;
+}
+
+.comparison-row > div:last-child {
+  border-right: none;
+}
+
+.comparison-header {
+  font-weight: bold;
+  color: #216b36;
+  background-color: #eaf5e6;
+}
+
+/* Product Filters */
+
+.filters {
+  padding: 30px 20px 50px;
+  text-align: center;
+}
+
+.filters h2 {
+  font-size: 32px;
+  color: #1f3d2b;
+  margin-bottom: 25px;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-list label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: white;
+  padding: 12px 16px;
+  border: 1px solid #d5e5d2;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #1f3d2b;
+}
+
+.filter-list input[type="checkbox"] {
+  width: auto;
+  padding: 0;
+}
+
+.filter-list input[type="number"] {
+  width: 110px;
+  padding: 8px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+/* Alternatives */
+
+.alternatives {
+  max-width: 1100px;
+  margin: 50px auto 0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.alternatives h2 {
+  font-size: 32px;
+  color: #216b36;
+  margin-bottom: 12px;
+}
+
+.alternatives > p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 17px;
+}
+
+.alternatives .product-list {
+  justify-content: center;
+}
+/* Ingredient & Material Information */
+
+.ingredient-info {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.ingredient-info > h2 {
+  color: #216b36;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.ingredient-card {
+  background-color: white;
+  border: 1px solid #d5e5d2;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: left;
+}
+
+.ingredient-card h3 {
+  color: #216b36;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.ingredient-card ul {
+  padding-left: 25px;
+}
+
+.ingredient-card li {
+  margin-bottom: 8px;
+}
+
+.ingredient-note {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #f4f8f3;
+  border-radius: 10px;
+}
+
+.ingredient-note p {
+  margin-bottom: 0;
+}
+/* Packaging Analysis */
+
+.packaging-info {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.packaging-info > h2 {
+  color: #216b36;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.packaging-card {
+  background-color: white;
+  border: 1px solid #d5e5d2;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: left;
+}
+
+.packaging-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #e1eadf;
+}
+
+.packaging-item strong {
+  color: #216b36;
+}
+
+.packaging-item p {
+  margin-bottom: 0;
+}
+
+.packaging-assessment {
+  margin-top: 25px;
+  padding: 18px;
+  background-color: #eaf5e6;
+  border-radius: 10px;
+}
+
+.packaging-assessment h3 {
+  color: #216b36;
+  margin-top: 0;
+}
+
+.packaging-note {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f4f8f3;
+  border-radius: 10px;
+}
+
+.packaging-note p {
+  margin-bottom: 0;
+}
+/* Eco Score Breakdown */
+
+.eco-score-number {
+  font-size: 30px;
+  color: #216b36;
+}
+
+.eco-score-breakdown {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #f4f8f3;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.eco-score-breakdown h3 {
+  color: #216b36;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.score-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #d5e5d2;
+}
+
+.score-item:last-child {
+  border-bottom: none;
+}
+
+.score-item strong {
+  color: #216b36;
+}
+
+.eco-score-note {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #eaf5e6;
+  border-radius: 10px;
+  font-size: 14px;
+}
+/* Recommendation Engine */
+
+.recommendation-section {
+  max-width: 1100px;
+  margin: 20px auto 50px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.recommendation-section > h2 {
+  color: #216b36;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.recommendation-section > p {
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.recommendation-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 25px;
+  background-color: white;
+  border: 1px solid #d5e5d2;
+  border-radius: 15px;
+}
+
+.recommendation-form label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid #d5e5d2;
+  border-radius: 8px;
+  background-color: #f4f8f3;
+}
+
+.recommendation-form select,
+.recommendation-form input[type="number"] {
+  padding: 8px;
+  border: 1px solid #9ab89b;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.recommendation-checkbox input {
+  width: auto;
+}
+
+.recommendation-results {
+  margin-top: 35px;
+}
+
+.recommendation-results > h3 {
+  color: #216b36;
+  margin-bottom: 20px;
+}
+
+.recommendation-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.recommendation-card {
+  width: 250px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #d5e5d2;
+  border-radius: 15px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.recommendation-emoji {
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.recommendation-card h3 {
+  color: #216b36;
+  text-align: center;
+}
+
+.recommendation-card p {
+  font-size: 14px;
+}
+/* Wishlist Button */
+
+.product-card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.wishlist-button {
+  background-color: white;
+  color: #216b36;
+  border: 1px solid #216b36;
+}
+
+.wishlist-button:hover {
+  background-color: #eaf5e6;
+}
+/* Wishlist Page */
+
+.wishlist-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.wishlist-page > h1 {
+  color: #216b36;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.wishlist-page > p {
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+.wishlist-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.wishlist-card {
+  width: 280px;
+  padding: 25px;
+  background-color: white;
+  border: 1px solid #d5e5d2;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.wishlist-image {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.wishlist-card h2 {
+  color: #216b36;
+  font-size: 22px;
+}
+
+.wishlist-card p {
+  font-size: 15px;
+}
+
+.wishlist-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.empty-wishlist {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: white;
+  border: 1px solid #d5e5d2;
+  border-radius: 15px;
+}
+
+.empty-wishlist h2 {
+  color: #216b36;
+}
